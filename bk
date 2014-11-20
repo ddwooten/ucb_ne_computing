@@ -1,1 +1,23 @@
 The berkelium (Bk) cluster is a computing cluster owned and operated by the nuclear engineering department.
+
+About the nodes:
+	624 cores total
+	13 nodes, 2.1 GHz, 4 CPUs, 12 cores/CPU
+	1 node with 256 GB RAM, 2 nodes with 192 GB RAM, 9 nodes with 96 GB RAM
+	1 GPU node
+
+About the fileserver:
+	42-disk RAID-6
+	2 concatenated raid sets
+	2 hot-swap drives per raid set which automatically activate when an active drive fails
+	3 drives have to fail simultaneously for data loss to occur
+	
+About the interconnects:
+	Infiniband QDR interconnects
+	40 Gbit/s
+	Remote Direct Memory Access (RDMA)
+	Low latency (~100 ns), 1 us MPI latency
+	
+About resource management:
+	SLURM (Simple Linux Utility Resource Manager)
+	https://computing.llnl.gov/linux/slurm/
