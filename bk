@@ -21,6 +21,7 @@ About the interconnects:
 About resource management:
 	SLURM (Simple Linux Utility Resource Manager)
 	https://computing.llnl.gov/linux/slurm/
+	Some SLURM examples: https://github.com/ucberkeley/brc-draft-documentation/tree/master/slurm-examples
 	
 User mailing list: berkelium-users [at] lists [dot] berkeley [dot] edu
 Admin mailing list: berkelium-admins [at] lists [dot] berkeley [dot] edu
