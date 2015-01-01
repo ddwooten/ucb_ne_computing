@@ -1,3 +1,5 @@
+THW bash material: https://github.com/thehackerwithin/berkeley/tree/master/bash
+
 # Git branch notifications
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
