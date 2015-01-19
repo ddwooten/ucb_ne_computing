@@ -1,0 +1,76 @@
+Introduction to Graduate Computing
+( some of the things you're supposed to know but no one will teach you )
+
+Outline
+    -The Shell
+    -Bash
+    -ssh
+    -scp
+    -sftp
+    -git
+    -LaTex
+    -Computing with Clusters
+    -Software you may want to know about
+
+Note on Conventions
+    -[*****] indicate variable input you supply, i.e. [name] for me would be 'Daniel'
+    -<command> indicates that you should perform the actions inside <stuff>
+    -<<input>> indicates things you type into whatever you're typing into
+
+Introduction to The Shell 
+
+Outline
+    -What is The Shell
+    -Command Options
+    -man
+    -apropos
+    -pwd
+    -ls
+    -cd
+    -cp
+    -mv
+    -mkdir
+    -rm
+    -PATH
+    -vim
+    -aliases
+
+The Shell
+    - The shell ( bash, sh, csh, etc ) is a programming language
+        -- Do not be afraid
+    - The shell has some syntax rules, primarily that spaces are part of commands
+    - What does this mean?
+        -- Namely that a=2 will set a to 2 while a = 2 will be invalid
+
+Command Options
+    - In the following slides we will be introduced to shell commands, these are actually programs that do things, but think of them like the buttons on your calculator, they simply tell the computer what you want
+    -Many commands have modifiers called options. We will see these in action later but for now all you need to know is
+        -- << -[letter]>> and << --[phrase]>> are how options are entered - note the space before the dash, this is necessary though [letter] style commands be given as << -[letter][letter]....[letter]
+     -options always follow the commands
+man
+    -short for manual, essentially allows you to view the help page for whatever command you put in
+        -- i.e. man man will bring up man's help page
+    - opens the manual in a text editor knonw as less
+        -- all you need to know is
+            --- up and down arrows scroll
+            --- page up and page down do what they say for once
+            --- <</[term]>> and then <enter> searches for [term] while <.> moves to the next match
+            --- <h> displays help information inside of less
+            --- <q> quits you back to the terminal
+
+apropos
+    - man is great, but what if you don't know the name of your tool?
+    -<<apropos [term]>> searches all the man pages for that term and returns a list of results with the number of times that term appeared
+
+pwd
+    -this command will print out to screen your current location in the file system
+    -all file systems start at the root, denoted with a '\'
+    -The file system is a hierachry
+    -You can shorten the length of absolute paths - those starting with \ - to relative paths using
+        -- '.' means the current directory ( folder )
+        -- '..' means one directory above
+        -- '~' means home
+
+ls
+    -lists the contents of the current directory, great for seeing what files and directories are accessible to you where you are
+    -has handy options 
